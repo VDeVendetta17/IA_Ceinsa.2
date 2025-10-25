@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: ceinsa-whatsapp-bot
+    env: docker
+    plan: starter
+    autoDeploy: true
+    envVars:
+      - key: VERIFY_TOKEN
+        sync: false
+      - key: WHATSAPP_TOKEN
+        sync: false
+      - key: APP_SECRET
+        sync: false
+      - key: WA_PHONE_ID
+        sync: false
+      - key: DENTALINK_BASE
+        sync: false
+      - key: DENTALINK_API_KEY
+        sync: false
+      - key: DATABASE_URL
+        sync: false
